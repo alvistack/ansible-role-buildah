@@ -21,5 +21,4 @@
     - role: python
     - role: git
     - role: golang
-    - role: runc
     - role: buildah

@@ -24,6 +24,6 @@ _apt:
   - { state: "latest", name: "libglib2.0-dev" }
   - { state: "latest", name: "libgpgme11-dev" }
   - { state: "latest", name: "libseccomp-dev" }
-  - { state: "latest", name: "libselinux1-dev" }
+  - { state: "latest", name: "libselinux-dev" }
   - { state: "latest", name: "libudev-dev" }
   - { state: "latest", name: "make" }
