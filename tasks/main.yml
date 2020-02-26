@@ -57,6 +57,7 @@
     state: "{{ item.state | default('directory') }}"
   loop:
     - { dest: "/usr/local/bin" }
+    - { dest: "/usr/local/share/bash-completion/completions" }
     - { dest: "{{ buildah_download.dest | dirname }}" }
   tags: buildah
 
@@ -87,6 +88,7 @@
       && tar -zx -C . -f {{ buildah_download.dest }} --strip-components=1 \
       && make BUILDTAGS='apparmor seccomp selinux' \
       && make install \
+      && make install.completions \
       && rm -rf $TMP_DIR
   args:
     executable: "/bin/bash"
@@ -104,4 +106,5 @@
     state: "{{ item.state | default('file') }}"
   loop:
     - { dest: "/usr/local/bin/buildah", mode: "0755" }
+    - { dest: "/usr/local/share/bash-completion/completions/buildah" }
   tags: buildah
