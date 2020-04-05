@@ -14,12 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: yum install
-  yum:
-    name: "{{ item.name }}"
-    enablerepo: "{{ item.enablerepo | default(None) or omit }}"
-    state: "{{ item.state | default(None) or omit }}"
-  loop: "{{ _yum }}"
-  register: result
-  until: result is succeeded
-  tags: buildah
+_yum:
+  - { state: "latest", name: "bash-completion" }
+  - { state: "latest", name: "bzip2" }
+  - { state: "latest", name: "device-mapper-devel", enablerepo: "PowerTools" }
+  - { state: "latest", name: "glib2-devel" }
+  - { state: "latest", name: "gpgme-devel", enablerepo: "PowerTools" }
+  - { state: "latest", name: "libassuan-devel", enablerepo: "PowerTools" }
+  - { state: "latest", name: "libseccomp-devel" }
+  - { state: "latest", name: "libselinux-devel" }
+  - { state: "latest", name: "make" }

@@ -89,7 +89,7 @@
       && cd $GOPATH/src/github.com/containers/buildah \
       && tar -zx -C . -f {{ buildah_download.dest }} --strip-components=1 \
       && export GIT_COMMIT={{ buildah_version }} \
-      && make BUILDTAGS='apparmor seccomp selinux' \
+      && make BUILDTAGS='apparmor seccomp selinux btrfs_noversion exclude_graphdriver_btrfs' \
       && make install \
       && make install.completions \
       && rm -rf $TMP_DIR

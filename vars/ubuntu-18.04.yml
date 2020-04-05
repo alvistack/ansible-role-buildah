@@ -16,8 +16,6 @@
 
 _apt:
   - { state: "latest", name: "bash-completion" }
-  - { state: "latest", name: "bats" }
-  - { state: "latest", name: "btrfs-tools" }
   - { state: "latest", name: "bzip2" }
   - { state: "latest", name: "libapparmor-dev" }
   - { state: "latest", name: "libassuan-dev" }
