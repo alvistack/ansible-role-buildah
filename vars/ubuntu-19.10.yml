@@ -19,7 +19,6 @@ _apt:
   - { state: "latest", name: "bzip2" }
   - { state: "latest", name: "libapparmor-dev" }
   - { state: "latest", name: "libassuan-dev" }
-  - { state: "latest", name: "libdevmapper-dev" }
   - { state: "latest", name: "libglib2.0-dev" }
   - { state: "latest", name: "libgpgme11-dev" }
   - { state: "latest", name: "libseccomp-dev" }
