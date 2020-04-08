@@ -15,6 +15,22 @@
 # limitations under the License.
 
 _buildah_download:
+  v1.14.7:
+    url: "https://github.com/containers/buildah/archive/v1.14.7.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.7.tar.gz"
+    checksum: "sha1:f02f1da3ccdc2bdf913860c8a0debbc8a27e2090"
+  v1.14.6:
+    url: "https://github.com/containers/buildah/archive/v1.14.6.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.6.tar.gz"
+    checksum: "sha1:109fbff613d67df83f13732523265934fe80e39f"
+  v1.14.5:
+    url: "https://github.com/containers/buildah/archive/v1.14.5.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.5.tar.gz"
+    checksum: "sha1:a4c0dbd11b379d689c9c6210d7f1b8535885b354"
+  v1.14.4:
+    url: "https://github.com/containers/buildah/archive/v1.14.4.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.4.tar.gz"
+    checksum: "sha1:dc4bcc45443bf0be29da519ec784b31517397fd1"
   v1.14.3:
     url: "https://github.com/containers/buildah/archive/v1.14.3.tar.gz"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.3.tar.gz"

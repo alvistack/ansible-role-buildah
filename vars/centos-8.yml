@@ -14,14 +14,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_apt:
+_yum:
   - { state: "latest", name: "bash-completion" }
   - { state: "latest", name: "bzip2" }
-  - { state: "latest", name: "libapparmor-dev" }
-  - { state: "latest", name: "libassuan-dev" }
-  - { state: "latest", name: "libglib2.0-dev" }
-  - { state: "latest", name: "libgpgme11-dev" }
-  - { state: "latest", name: "libseccomp-dev" }
-  - { state: "latest", name: "libselinux-dev" }
-  - { state: "latest", name: "libudev-dev" }
+  - { state: "latest", name: "glib2-devel" }
+  - { state: "latest", name: "gpgme-devel", enablerepo: "PowerTools" }
+  - { state: "latest", name: "libassuan-devel", enablerepo: "PowerTools" }
+  - { state: "latest", name: "libseccomp-devel" }
+  - { state: "latest", name: "libselinux-devel" }
   - { state: "latest", name: "make" }
