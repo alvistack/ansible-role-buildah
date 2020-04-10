@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _buildah_download:
+  v1.14.8:
+    url: "https://github.com/containers/buildah/archive/v1.14.8.tar.gz"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.8.tar.gz"
+    checksum: "sha1:1f9bd5cab812c55c0e7656b65afb7e9e6cd061ed"
   v1.14.7:
     url: "https://github.com/containers/buildah/archive/v1.14.7.tar.gz"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.7.tar.gz"
