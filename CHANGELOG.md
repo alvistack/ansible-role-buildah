@@ -4,6 +4,7 @@
 
 ### Major Changes
 
+  - Install with static binary archive
   - Support `crun`
   - Support Fedora 32
   - Support Debian 10
