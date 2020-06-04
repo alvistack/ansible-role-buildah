@@ -16,42 +16,6 @@
 
 _buildah_download:
   v1.14.9:
-    url: "https://github.com/containers/buildah/archive/v1.14.9.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.9.tar.gz"
-    checksum: "sha1:c663721202c90de628f175a2c078eb5a9273bba0"
-  v1.14.8:
-    url: "https://github.com/containers/buildah/archive/v1.14.8.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.8.tar.gz"
-    checksum: "sha1:1f9bd5cab812c55c0e7656b65afb7e9e6cd061ed"
-  v1.14.7:
-    url: "https://github.com/containers/buildah/archive/v1.14.7.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.7.tar.gz"
-    checksum: "sha1:f02f1da3ccdc2bdf913860c8a0debbc8a27e2090"
-  v1.14.6:
-    url: "https://github.com/containers/buildah/archive/v1.14.6.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.6.tar.gz"
-    checksum: "sha1:109fbff613d67df83f13732523265934fe80e39f"
-  v1.14.5:
-    url: "https://github.com/containers/buildah/archive/v1.14.5.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.5.tar.gz"
-    checksum: "sha1:a4c0dbd11b379d689c9c6210d7f1b8535885b354"
-  v1.14.4:
-    url: "https://github.com/containers/buildah/archive/v1.14.4.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.4.tar.gz"
-    checksum: "sha1:dc4bcc45443bf0be29da519ec784b31517397fd1"
-  v1.14.3:
-    url: "https://github.com/containers/buildah/archive/v1.14.3.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.3.tar.gz"
-    checksum: "sha1:e81cdb01089ed174d48ca7e515820f270506d9a5"
-  v1.14.2:
-    url: "https://github.com/containers/buildah/archive/v1.14.2.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.2.tar.gz"
-    checksum: "sha1:f65c605dc4105452a702b768d832454339d531b0"
-  v1.14.1:
-    url: "https://github.com/containers/buildah/archive/v1.14.1.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.1.tar.gz"
-    checksum: "sha1:cb0cd38ce466af51bd6094f4c1a84b7b3af26336"
-  v1.14.0:
-    url: "https://github.com/containers/buildah/archive/v1.14.0.tar.gz"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.0.tar.gz"
-    checksum: "sha1:b5c886c1e891ae742031d4bfc92d7a08ed0ef0af"
+    url: "https://github.com/alvistack/buildah/releases/download/v1.14.9/buildah-v1.14.9-linux-amd64"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.14.9-linux-amd64"
+    checksum: "sha1:938523b7e6a80e6aa46dded6bc2b7f4072df3c53"

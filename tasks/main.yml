@@ -56,8 +56,8 @@
     mode: "{{ item.mode | default('0755') }}"
     state: "{{ item.state | default('directory') }}"
   loop:
+    - { dest: "/etc/bash_completion.d" }
     - { dest: "/usr/local/bin" }
-    - { dest: "/usr/local/share/bash-completion/completions" }
     - { dest: "{{ buildah_download.dest | dirname }}" }
   tags: buildah
 
@@ -75,30 +75,30 @@
   until: get_url_result is succeeded
   tags: buildah
 
-- name: build package
-  environment:
-    PATH: "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+- name: unarchive package
   shell: |
     set -o pipefail
+    cd /usr/local/bin
     TMP_DIR="$(mktemp -d)" \
-      && export GOPATH=$TMP_DIR \
-      && export PATH="$GOPATH/bin:$PATH" \
-      && cd $GOPATH \
-      && go get -u github.com/cpuguy83/go-md2man \
-      && mkdir -p $GOPATH/src/github.com/containers/buildah \
-      && cd $GOPATH/src/github.com/containers/buildah \
-      && tar -zx -C . -f {{ buildah_download.dest }} --strip-components=1 \
-      && export GIT_COMMIT={{ buildah_version }} \
-      && export BUILDTAGS="btrfs_noversion exclude_graphdriver_btrfs exclude_graphdriver_devicemapper apparmor seccomp selinux" \
-      && make \
-      && make install \
-      && make install.completions \
+      && cp {{ buildah_download.dest }} $TMP_DIR/buildah \
+      && chown root:root $TMP_DIR/buildah \
+      && chmod 0755 $TMP_DIR/buildah \
+      && mv $TMP_DIR/buildah . \
       && rm -rf $TMP_DIR
   args:
     executable: "/bin/bash"
   when: get_url_result is changed
-  register: result
-  until: result is succeeded
+  tags: buildah
+
+- name: copy templates
+  template:
+    dest: "{{ item.dest }}"
+    src: "{{ item.src | default('./templates' + item.dest + '.j2') }}"
+    owner: "{{ item.owner | default('root') }}"
+    group: "{{ item.group | default('root') }}"
+    mode: "{{ item.mode | default('0644') }}"
+  loop:
+    - { dest: "/etc/bash_completion.d/buildah" }
   tags: buildah
 
 - name: prepare files
@@ -109,6 +109,6 @@
     mode: "{{ item.mode | default('0644') }}"
     state: "{{ item.state | default('file') }}"
   loop:
+    - { dest: "/etc/bash_completion.d/buildah" }
     - { dest: "/usr/local/bin/buildah", mode: "0755" }
-    - { dest: "/usr/local/share/bash-completion/completions/buildah" }
   tags: buildah
