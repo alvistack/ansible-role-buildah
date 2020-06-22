@@ -27,8 +27,8 @@
       tags: containers_common
 
     - include_role:
-        name: crun
-      tags: crun
+        name: "{{ containers_common_engine_runtime }}"
+      tags: containers_common_engine_runtime
 
     - include_role:
         name: buildah
