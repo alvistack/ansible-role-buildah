@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _buildah_download:
+  "v1.17.0":
+    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.17.0/buildah-v1.17.0-linux-amd64"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.17.0-linux-amd64"
+    checksum: "sha1:cc2a0852bb55fab014e277ce7393893e88c2b353"
   "v1.16.5":
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.16.5/buildah-v1.16.5-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.16.5-linux-amd64"
@@ -27,15 +31,3 @@ _buildah_download:
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.16.3/buildah-v1.16.3-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.16.3-linux-amd64"
     checksum: "sha1:759afbbcd36c54c8092fba81202f6dbf71b77062"
-  "v1.15.2":
-    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.15.2/buildah-v1.15.2-linux-amd64"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.15.2-linux-amd64"
-    checksum: "sha1:d5211e02dea635ba12cd357e38930b46fd6538b5"
-  "v1.15.1":
-    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.15.1/buildah-v1.15.1-linux-amd64"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.15.1-linux-amd64"
-    checksum: "sha1:d55e47a10a2d215ebd46d54423a5bb0760324bc5"
-  "v1.15.0":
-    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.15.0/buildah-v1.15.0-linux-amd64"
-    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.15.0-linux-amd64"
-    checksum: "sha1:284ce6ea56e61d035939c047da607f89e93d5c2f"
