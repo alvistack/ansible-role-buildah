@@ -1,6 +1,6 @@
 # Ansible Role for Buildah
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-buildah.svg)](https://travis-ci.com/alvistack/ansible-role-buildah)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-buildah/master)](https://gitlab.com/alvistack/ansible-role-buildah/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-buildah.svg)](https://github.com/alvistack/ansible-role-buildah/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-buildah.svg)](https://github.com/alvistack/ansible-role-buildah/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.buildah-blue.svg)](https://galaxy.ansible.com/alvistack/buildah)
