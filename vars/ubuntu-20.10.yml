@@ -14,22 +14,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- hosts: all
-  remote_user: root
-  become: true
-  tasks:
-    - include_role:
-        name: python
-      tags: python
-
-    - include_role:
-        name: containers_common
-      tags: containers_common
-
-    - include_role:
-        name: runc
-      tags: runc
-
-    - include_role:
-        name: buildah
-      tags: buildah
+_apt:
+  - { state: "latest", name: "bash-completion" }
+  - { state: "latest", name: "bzip2" }
