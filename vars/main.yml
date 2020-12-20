@@ -18,7 +18,7 @@ _buildah_download:
   "v1.18.0":
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.18.0/buildah-v1.18.0-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.18.0-linux-amd64"
-    checksum: "sha1:21859176705d57429360d5d89e32b87a511714e2"
+    checksum: "sha1:7aaffbc5e078ff7ebf267cb8c3f968236e159b6d"
   "v1.17.1":
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.17.1/buildah-v1.17.1-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.17.1-linux-amd64"
