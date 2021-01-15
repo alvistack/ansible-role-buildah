@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _buildah_download:
+  "v1.19.1":
+    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.19.1/buildah-v1.19.1-linux-amd64"
+    dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.19.1-linux-amd64"
+    checksum: "sha1:b157d0df816a0c07ecfb638da276eb25007f2534"
   "v1.19.0":
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.19.0/buildah-v1.19.0-linux-amd64"
     dest: "{{ ansible_user_dir }}/.ansible/tmp/buildah-v1.19.0-linux-amd64"
