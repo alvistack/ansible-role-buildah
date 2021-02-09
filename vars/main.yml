@@ -15,6 +15,10 @@
 # limitations under the License.
 
 _buildah_download:
+  "v1.19.4":
+    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.19.4/buildah-v1.19.4-linux-amd64"
+    dest: "/var/cache/ansible/d4bac0f7b7a7f3c415e9043a7afcad0e6d02dd1f25c39b7171bc42bd7c5ed506/buildah-v1.19.4-linux-amd64"
+    checksum: "sha256:d4bac0f7b7a7f3c415e9043a7afcad0e6d02dd1f25c39b7171bc42bd7c5ed506"
   "v1.19.3":
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.19.3/buildah-v1.19.3-linux-amd64"
     dest: "/var/cache/ansible/58043605487359275081de98780038b687d701e1a128d8827614e3148428c660/buildah-v1.19.3-linux-amd64"
@@ -23,10 +27,6 @@ _buildah_download:
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.19.2/buildah-v1.19.2-linux-amd64"
     dest: "/var/cache/ansible/709bf60a568ca0f7cb19464d8e68d1950b2f9b1f1fb3e57d7e39a54db82ef3ca/buildah-v1.19.2-linux-amd64"
     checksum: "sha256:709bf60a568ca0f7cb19464d8e68d1950b2f9b1f1fb3e57d7e39a54db82ef3ca"
-  "v1.19.1":
-    url: "https://github.com/alvistack/containers-buildah/releases/download/v1.19.1/buildah-v1.19.1-linux-amd64"
-    dest: "/var/cache/ansible/c6352eb020d40ca7b7a10c9d1c38e4cfbae66f810db7d6073d93d3a82155acf3/buildah-v1.19.1-linux-amd64"
-    checksum: "sha256:c6352eb020d40ca7b7a10c9d1c38e4cfbae66f810db7d6073d93d3a82155acf3"
   "v1.18.0":
     url: "https://github.com/alvistack/containers-buildah/releases/download/v1.18.0/buildah-v1.18.0-linux-amd64"
     dest: "/var/cache/ansible/be2be329f4fded3c35142d6619b2162ee981ea626edec8e9770fb63004fdeb50/buildah-v1.18.0-linux-amd64"
