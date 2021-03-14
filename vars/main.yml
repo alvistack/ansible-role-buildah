@@ -18,16 +18,16 @@ _buildah_download:
   "v1.19.8":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.19.8/buildah-v1.19.8-linux-amd64"
     dest: "/var/cache/ansible/6f6e764de15b55792219f526aa267ad69c80f77ae9aff2a73a665a0a217a15ab/buildah-v1.19.8-linux-amd64"
-    checksum: "sha256:6f6e764de15b55792219f526aa267ad69c80f77ae9aff2a73a665a0a217a15ab"
+    sha256sum: "6f6e764de15b55792219f526aa267ad69c80f77ae9aff2a73a665a0a217a15ab"
   "v1.19.7":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.19.7/buildah-v1.19.7-linux-amd64"
     dest: "/var/cache/ansible/dbe4c9f17d49a1b734ee98eb94c1610124fc1cfd33cba6bc93ecb2d738c7dd67/buildah-v1.19.7-linux-amd64"
-    checksum: "sha256:dbe4c9f17d49a1b734ee98eb94c1610124fc1cfd33cba6bc93ecb2d738c7dd67"
+    sha256sum: "dbe4c9f17d49a1b734ee98eb94c1610124fc1cfd33cba6bc93ecb2d738c7dd67"
   "v1.19.6":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.19.6/buildah-v1.19.6-linux-amd64"
     dest: "/var/cache/ansible/41b91d3ce44149a626d92b0f8ec496a4e22fc5cbb62b968c4ab810986ab8b3db/buildah-v1.19.6-linux-amd64"
-    checksum: "sha256:41b91d3ce44149a626d92b0f8ec496a4e22fc5cbb62b968c4ab810986ab8b3db"
+    sha256sum: "41b91d3ce44149a626d92b0f8ec496a4e22fc5cbb62b968c4ab810986ab8b3db"
   "v1.18.0":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.18.0/buildah-v1.18.0-linux-amd64"
     dest: "/var/cache/ansible/be2be329f4fded3c35142d6619b2162ee981ea626edec8e9770fb63004fdeb50/buildah-v1.18.0-linux-amd64"
-    checksum: "sha256:be2be329f4fded3c35142d6619b2162ee981ea626edec8e9770fb63004fdeb50"
+    sha256sum: "be2be329f4fded3c35142d6619b2162ee981ea626edec8e9770fb63004fdeb50"
