@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # Buildah version.
-buildah_version: "v1.20.1"
+buildah_version: "v1.21.0"
 
 # Buildah download details.
 buildah_download: "{{ _buildah_download[buildah_version] }}"
