@@ -14,8 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Buildah release.
+buildah_release: "v1.21"
+
 # Buildah version.
-buildah_version: "v1.21.0"
+buildah_version: "{{ _buildah_version[buildah_release] }}"
 
 # Buildah download details.
 buildah_download: "{{ _buildah_download[buildah_version] }}"
