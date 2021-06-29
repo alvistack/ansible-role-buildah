@@ -15,10 +15,14 @@
 # limitations under the License.
 
 _buildah_version:
-  "v1.21": "v1.21.1"
+  "v1.21": "v1.21.2"
   "v1.20": "v1.20.1"
 
 _buildah_download:
+  "v1.21.2":
+    url: "http://github.com/alvistack/containers-buildah/releases/download/v1.21.2/buildah-v1.21.2-linux-amd64"
+    dest: "/var/cache/ansible/c3cf69d65452c2f0242d2617706fb8544eca3a6a1a5309685dfcd52d4bb2bdfd/buildah-v1.21.2-linux-amd64"
+    checksum: "c3cf69d65452c2f0242d2617706fb8544eca3a6a1a5309685dfcd52d4bb2bdfd"
   "v1.21.1":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.21.1/buildah-v1.21.1-linux-amd64"
     dest: "/var/cache/ansible/55f13dc8c8afca7d47383e4acc0430e255cfd1e6c237e7296eca527a31c42a55/buildah-v1.21.1-linux-amd64"
