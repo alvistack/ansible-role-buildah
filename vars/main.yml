@@ -15,27 +15,27 @@
 # limitations under the License.
 
 _buildah_version:
-  "v1.21": "v1.21.2"
-  "v1.20": "v1.20.1"
+  "1.21": "1.21.3"
+  "1.20": "1.20.1"
 
 _buildah_download:
-  "v1.21.2":
+  "1.21.3":
+    url: "http://github.com/alvistack/containers-buildah/releases/download/v1.21.3/buildah-v1.21.3-linux-amd64"
+    dest: "/var/cache/ansible/685e69452e221ec56c2d8497536418adafca4acff25748eb114be37008555c04/buildah-v1.21.3-linux-amd64"
+    checksum: "685e69452e221ec56c2d8497536418adafca4acff25748eb114be37008555c04"
+  "1.21.2":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.21.2/buildah-v1.21.2-linux-amd64"
     dest: "/var/cache/ansible/c3cf69d65452c2f0242d2617706fb8544eca3a6a1a5309685dfcd52d4bb2bdfd/buildah-v1.21.2-linux-amd64"
     checksum: "c3cf69d65452c2f0242d2617706fb8544eca3a6a1a5309685dfcd52d4bb2bdfd"
-  "v1.21.1":
+  "1.21.1":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.21.1/buildah-v1.21.1-linux-amd64"
     dest: "/var/cache/ansible/55f13dc8c8afca7d47383e4acc0430e255cfd1e6c237e7296eca527a31c42a55/buildah-v1.21.1-linux-amd64"
     checksum: "55f13dc8c8afca7d47383e4acc0430e255cfd1e6c237e7296eca527a31c42a55"
-  "v1.21.0":
-    url: "http://github.com/alvistack/containers-buildah/releases/download/v1.21.0/buildah-v1.21.0-linux-amd64"
-    dest: "/var/cache/ansible/f6700d7eed08e33fc504a608d201d8c5fae3c7bf3d59f8faa1f450447d303fe4/buildah-v1.21.0-linux-amd64"
-    checksum: "f6700d7eed08e33fc504a608d201d8c5fae3c7bf3d59f8faa1f450447d303fe4"
-  "v1.20.1":
+  "1.20.1":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.20.1/buildah-v1.20.1-linux-amd64"
     dest: "/var/cache/ansible/c8cccf0cc297407a3bb94564bfc1262cc7d4bc1aab8dd25a4d25f09ec500c4b4/buildah-v1.20.1-linux-amd64"
     checksum: "c8cccf0cc297407a3bb94564bfc1262cc7d4bc1aab8dd25a4d25f09ec500c4b4"
-  "v1.20.0":
+  "1.20.0":
     url: "http://github.com/alvistack/containers-buildah/releases/download/v1.20.0/buildah-v1.20.0-linux-amd64"
     dest: "/var/cache/ansible/d8ee8b1ed5051d8b89774f1196c708614927ce7a3c9674f25b6cd5212cdf5af0/buildah-v1.20.0-linux-amd64"
     checksum: "d8ee8b1ed5051d8b89774f1196c708614927ce7a3c9674f25b6cd5212cdf5af0"
