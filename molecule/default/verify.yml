@@ -19,6 +19,6 @@
   become: true
   tasks:
     - name: buildah --version
-      command: buildah --version
+      ansible.builtin.command: buildah --version
       register: result
       changed_when: result is not succeeded
